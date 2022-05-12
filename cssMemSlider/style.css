@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(36, 43, 43);
+    --main-color-light: rgb(237, 241, 246);
+    --addition-color: rgb(25, 171, 171);
+}
+
+body {
+    min-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--main-color);
+}
+
+input[name="switcher"] {
+    visibility: hidden;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--main-color-light);
+}
+
+.mem-images-wrapper {
+    width: 80%;
+    height: 100%;  
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mem-images {
+    position: relative;
+    width: 500%;
+    height: 100%;  
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mem {
+    width: 100vw;
+    height: 32rem;
+    transition: 1s;
+}
+
+.mem-image {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mem-image1 {
+    background-image: url(./assets/img/mem_1.jpg);
+}
+
+.mem-image2 {
+    background-image: url(./assets/img/mem_2.jpg);
+}
+
+.mem-image3 {
+    background-image: url(./assets/img/mem_3.jpg);
+}
+
+.mem-image4 {
+    background-image: url(./assets/img/mem_4.jpg);
+}
+
+.mem-image5 {
+    background-image: url(./assets/img/mem_5.jpg);
+}
+
+.mem-content {
+    display: flex;
+}
+
+.mem-content-switcher{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mem-content-switcher-btn {
+    width: 40%;
+    height: 40%;
+    background-color: var(--main-color);
+    border: 0;
+    border-radius: 50%;
+
+    transition: 1s;
+}
+
+.mem-content-switcher:hover .mem-content-switcher-btn {
+    transform: scale(1.1);
+    background-color: var(--addition-color);
+}
+
+
+input:checked ~ .mem-content-switcher{
+    background-color: brown;
+}
+
+input[type="radio"]:checked .mem-content-switcher {
+    background-color: brown;
+}
+
+
+/* #switcher2:checked ~ .mem {
+    transform: translateX(-100%);
+    background-color: var(--addition-color);
+} */
+
