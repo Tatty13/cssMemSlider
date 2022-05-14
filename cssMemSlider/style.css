@@ -6,7 +6,7 @@
 
 :root {
     --main-color: rgb(36, 43, 43);
-    --main-color-light: rgb(237, 241, 246);
+    --main-color-light: rgb(219, 223, 228);
     --addition-color: rgb(25, 171, 171);
 }
 
@@ -21,11 +21,16 @@ input[name="switcher"] {
     visibility: hidden;
 }
 
-.container {
+.main-container {
     width: 80%;
     height: 80%;
     margin: 0 auto;
     padding: 2rem;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; */
+
     background-color: var(--main-color-light);
 }
 
@@ -50,6 +55,8 @@ input[name="switcher"] {
     width: 100vw;
     height: 32rem;
     transition: 1s;
+
+    background-color: var(--main-color);
 }
 
 .mem-image {
@@ -61,27 +68,35 @@ input[name="switcher"] {
     background-repeat: no-repeat;
 }
 
-.mem-image1 {
-    background-image: url(./assets/img/mem_1.jpg);
+.mem-text-wrapper {
+    width: 70%;
+    height: 4rem;
+    margin: auto;
+
+    overflow: hidden;
 }
 
-.mem-image2 {
-    background-image: url(./assets/img/mem_2.jpg);
+.mem-texts {
+    position: relative;
+    width: 500%;
+    height: 100%;  
+    display: flex;
+    justify-content: flex-start;
 }
 
-.mem-image3 {
-    background-image: url(./assets/img/mem_3.jpg);
+.mem-text {
+    width: 100vw;
+    height: 32rem;
+    transition: 1s;
 }
 
-.mem-image4 {
-    background-image: url(./assets/img/mem_4.jpg);
+.mem-text-item {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: var(--main-color);
 }
 
-.mem-image5 {
-    background-image: url(./assets/img/mem_5.jpg);
-}
-
-.mem-content {
+.mem-content-switchers {
     display: flex;
 }
 
@@ -104,23 +119,60 @@ input[name="switcher"] {
     transition: 1s;
 }
 
+#switcher1:checked ~ .mem-content-switchers label:nth-child(1) .mem-content-switcher-btn,
+#switcher2:checked ~ .mem-content-switchers label:nth-child(2) .mem-content-switcher-btn,
+#switcher3:checked ~ .mem-content-switchers label:nth-child(3) .mem-content-switcher-btn,
+#switcher4:checked ~ .mem-content-switchers label:nth-child(4) .mem-content-switcher-btn,
+#switcher5:checked ~ .mem-content-switchers label:nth-child(5) .mem-content-switcher-btn {
+
+    background: var(--main-color-light);
+    border: 0.1rem solid var(--main-color);
+
+}
+
 .mem-content-switcher:hover .mem-content-switcher-btn {
     transform: scale(1.1);
     background-color: var(--addition-color);
+    border: 0.1rem solid var(--addition-color) !important;
 }
 
-
-input:checked ~ .mem-content-switcher{
-    background-color: brown;
+#switcher:checked ~ .mem-images-wrapper .mem {
+    transform: translateX(0%);
 }
 
-input[type="radio"]:checked .mem-content-switcher {
-    background-color: brown;
-}
-
-
-/* #switcher2:checked ~ .mem {
+#switcher2:checked ~ .mem-images-wrapper .mem {
     transform: translateX(-100%);
-    background-color: var(--addition-color);
-} */
+}
 
+#switcher3:checked ~ .mem-images-wrapper .mem {
+    transform: translateX(-200%);
+}
+
+#switcher4:checked ~ .mem-images-wrapper .mem {
+    transform: translateX(-300%);
+}
+
+#switcher5:checked ~ .mem-images-wrapper .mem {
+    transform: translateX(-400%);
+}
+
+
+#switcher1:checked ~ .mem-text-wrapper .mem-text {
+    transform: translateX(0%);
+}
+
+#switcher2:checked ~ .mem-text-wrapper .mem-text {
+    transform: translateX(-100%);
+}
+
+#switcher3:checked ~ .mem-text-wrapper .mem-text {
+    transform: translateX(-200%);
+}
+
+#switcher4:checked ~ .mem-text-wrapper .mem-text {
+    transform: translateX(-300%);
+}
+
+#switcher5:checked ~ .mem-text-wrapper .mem-text {
+    transform: translateX(-400%);
+}
