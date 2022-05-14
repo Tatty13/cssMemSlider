@@ -18,29 +18,30 @@ body {
 }
 
 input[name="switcher"] {
-    visibility: hidden;
+    display: none;
 }
 
 .main-container {
     width: 80%;
-    height: 80%;
     margin: 0 auto;
-    padding: 2rem;
-    /* display: flex;
-    flex-direction: column;
+    padding: 2rem 3rem 3rem;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 2rem; */
-
+    gap: 2rem;
     background-color: var(--main-color-light);
 }
 
 .mem-images-wrapper {
-    width: 80%;
+    width: 100%;
     height: 100%;  
     margin: auto;
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
+    background-color: var(--main-color);
 }
 
 .mem-images {
@@ -55,8 +56,6 @@ input[name="switcher"] {
     width: 100vw;
     height: 32rem;
     transition: 1s;
-
-    background-color: var(--main-color);
 }
 
 .mem-image {
@@ -69,10 +68,7 @@ input[name="switcher"] {
 }
 
 .mem-text-wrapper {
-    width: 70%;
-    height: 4rem;
-    margin: auto;
-
+    width: 60%;
     overflow: hidden;
 }
 
@@ -80,13 +76,13 @@ input[name="switcher"] {
     position: relative;
     width: 500%;
     height: 100%;  
+    margin-right: 0;
     display: flex;
     justify-content: flex-start;
 }
 
 .mem-text {
     width: 100vw;
-    height: 32rem;
     transition: 1s;
 }
 
@@ -97,12 +93,15 @@ input[name="switcher"] {
 }
 
 .mem-content-switchers {
+    width: max-content;
     display: flex;
+    align-self: flex-start;
+    gap: 0.1rem;
 }
 
 .mem-content-switcher{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,8 +109,8 @@ input[name="switcher"] {
 }
 
 .mem-content-switcher-btn {
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 60%;
     background-color: var(--main-color);
     border: 0;
     border-radius: 50%;
