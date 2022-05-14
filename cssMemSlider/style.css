@@ -135,7 +135,7 @@ input[name="switcher"] {
     border: 0.1rem solid var(--addition-color) !important;
 }
 
-#switcher:checked ~ .mem-images-wrapper .mem {
+#switcher1:checked ~ .mem-images-wrapper .mem {
     transform: translateX(0%);
 }
 
@@ -153,6 +153,32 @@ input[name="switcher"] {
 
 #switcher5:checked ~ .mem-images-wrapper .mem {
     transform: translateX(-400%);
+}
+
+
+#switcher1:checked ~ .mem-images-wrapper {
+    background-color: rgb(185 208 188);
+    transition: 1s;
+}
+
+#switcher2:checked ~ .mem-images-wrapper {
+    background-color: rgb(69 71 57);
+    transition: 1s;
+}
+
+#switcher3:checked ~ .mem-images-wrapper {
+    background-color: rgb(186 197 226);
+    transition: 1s;
+}
+
+#switcher4:checked ~ .mem-images-wrapper {
+    background-color: rgb(68 153 60);
+    transition: 1s;
+}
+
+#switcher5:checked ~ .mem-images-wrapper {
+    background-color: rgb(186 197 226);
+    transition: 1s;
 }
 
 
@@ -175,6 +201,7 @@ input[name="switcher"] {
 #switcher5:checked ~ .mem-text-wrapper .mem-text {
     transform: translateX(-400%);
 }
+
 
 @media screen and (max-width: 760px) {
 
