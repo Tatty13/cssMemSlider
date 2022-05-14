@@ -175,3 +175,37 @@ input[name="switcher"] {
 #switcher5:checked ~ .mem-text-wrapper .mem-text {
     transform: translateX(-400%);
 }
+
+@media screen and (max-width: 760px) {
+
+    .main-container {
+        width: 100%;
+        padding: 2rem 2rem 4rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .mem-text-wrapper {
+        width: 100%;
+        align-self: flex-start;
+        order: 1;
+    }
+
+    .mem-content-switchers {
+        align-self: center;
+    }
+
+    .mem {
+        height: auto;
+    }
+
+    .mem-image {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
