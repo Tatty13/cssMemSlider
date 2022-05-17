@@ -203,6 +203,13 @@ input[name="switcher"] {
 }
 
 
+
+.mem-content-switcher:active {
+    background-color: var(--main-color);
+    border-radius: 50%;
+    transform: translateY(0.2rem);
+}
+
 @media screen and (max-width: 760px) {
 
     .main-container {
