@@ -10,6 +10,8 @@
 - мобильная версия: 280-760px
 - версия для ПК: 761-1680px
 
+[Файлы проекта](https://github.com/Tatty13/cssMemSlider/tree/gh-pages/cssMemSlider)
+
 ## **Функциональность**
 
 * слайдер с использованием средств CSS
