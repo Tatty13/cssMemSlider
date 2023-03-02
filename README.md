@@ -1,10 +1,10 @@
-# Project: CSS Meme Slider
+# CSS Meme Slider
 
 ![Project screenshot](https://user-images.githubusercontent.com/91495653/168441610-ef3bdbdb-a690-40a4-90bf-0b456be4338e.jpg)
 
 ## **About the project**
 
-The educational project of the course "JS/Frontend" by RS School.
+The study project of the course "JS/Frontend" by RS School.
 
 The page markup is done using semantic tags. Flexbox layout is used to align the elements. Adaptive layout is implemented:
 - mobile version: 280-760px
@@ -39,7 +39,7 @@ The page markup is done using semantic tags. Flexbox layout is used to align the
 
 ---
 
-# Проект: CSS Мем-слайдер
+# CSS Мем-слайдер
 
 ## **О проекте**
 
