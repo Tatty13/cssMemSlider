@@ -1,6 +1,45 @@
-# Проект: CSS Мем-слайдер
+# Project: CSS Meme Slider
 
 ![Project screenshot](https://user-images.githubusercontent.com/91495653/168441610-ef3bdbdb-a690-40a4-90bf-0b456be4338e.jpg)
+
+## **About the project**
+
+The educational project of the course "JS/Frontend" by RS School.
+
+The page markup is done using semantic tags. Flexbox layout is used to align the elements. Adaptive layout is implemented:
+- mobile version: 280-760px
+- PC version: 761-1680px
+
+[Project Files](https://github.com/Tatty13/cssMemSlider/tree/gh-pages/cssMemSlider)
+
+## **Functionality**
+
+* slider using CSS tools
+* animation for changing pictures and captions
+
+## **Stack**
+
+* HTML5
+* CSS3
+  * Flexbox layout
+* Git
+
+## **Plans for improvement**
+
+* Optimize code using SCSS
+* Add slides
+
+---
+
+---
+
+[Deploy](https://tatty13.github.io/cssMemSlider/cssMemSlider/)
+
+---
+
+---
+
+# Проект: CSS Мем-слайдер
 
 ## **О проекте**
 
@@ -29,9 +68,3 @@
 
 * Оптимизировать код с использованием SCSS
 * Добавить слайды
-
----
-
-[Деплой](https://tatty13.github.io/cssMemSlider/cssMemSlider/)
-
----
